@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NANIS COMMUNICATION</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:#000;
+color:white;
+overflow-x:hidden;
+
+}
+
+/* VIDEO / LIVE BACKGROUND */
+
+#bg{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-2;
+
+background:url(images/bg.jpg) center center/cover;
+
+}
+
+#overlay{
+
+position:fixed;
+
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.55);
+z-index:-1;
+
+}
+
+/* HEADER */
+
+header{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:70px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 20px;
+
+background:rgba(0,0,0,.55);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid gold;
+
+z-index:999;
+
+}
+
+/* LOGO */
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+.logo img{
+
+width:48px;
+height:48px;
+border-radius:50%;
+
+}
+
+.logo h2{
+
+font-family:Cinzel;
+color:gold;
+font-size:20px;
+
+}
+
+/* MENU */
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:18px;
+
+font-size:14px;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:gold;
+
+}
+
+/* NEWS BAR */
+
+.news{
+
+margin-top:70px;
+
+background:#111;
+
+padding:10px;
+
+overflow:hidden;
+
+white-space:nowrap;
+
+border-top:1px solid gold;
+border-bottom:1px solid gold;
+
+}
+
+.news span{
+
+display:inline-block;
+
+padding-left:100%;
+
+animation:scroll 30s linear infinite;
+
+color:gold;
+
+}
+
+@keyframes scroll{
+
+0%{
+
+transform:translateX(0);
+
+}
+
+100%{
+
+transform:translateX(-100%);
+
+}
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+font-family:Cinzel;
+
+color:gold;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+
+font-size:18px;
+
+}
+
+/* BUTTON */
+
+.btn{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:14px 30px;
+
+background:gold;
+
+color:black;
+
+font-weight:bold;
+
+border-radius:50px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+
+}
+
+/* QUICK MENU */
+
+.quick{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}
+
+.quick a{
+
+padding:12px 22px;
+
+border:1px solid gold;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:white;
+
+}
+
+.quick a:hover{
+
+background:gold;
+color:black;
+
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+z-index:999;
+
+animation:pulse 2s infinite;
+
+}
+
+.whatsapp img{
+
+width:70px;
+
+height:70px;
+
+border-radius:50%;
+
+}
+
+@keyframes pulse{
+
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="bg"></div>
+
+<div id="overlay"></div>
+
+<header>
+
+<div class="logo">
+
+<img src="images/logo-main.png">
+
+<h2>NANIS COMMUNICATION</h2>
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#">Info Today</a>
+
+<a href="#">Media Journey</a>
+
+<a href="#">MHO Details</a>
+
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<div class="news">
+
+<span>
+
+🔴 LIVE MALAYSIA NEWS • Welcome to Nanis Communication • Humanity • Technology • Business • Education
+
+</span>
+
+</div>
+
+<section class="hero">
+
+<div>
+
+<h1>Bridging Technology, Humanity & Business</h1>
+
+<p>
+
+Welcome to Nanis Communication. Delivering information, media, humanitarian activities and business solutions in one modern digital platform.
+
+</p>
+
+<a class="btn" href="#">GET IN TOUCH</a>
+
+<div class="quick">
+
+<a href="#">TikTok Live</a>
+
+<a href="#">Product</a>
+
+<a href="#">Quote</a>
+
+<a href="#">QR Payment</a>
+
+</div>
+
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/60123456789">
+
+<img src="images/logo-whatsapp.png">
+
+</a>
+
+</body>
+
+</html>

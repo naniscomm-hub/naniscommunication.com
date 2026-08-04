@@ -10,7 +10,157 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+section{
 
+padding:80px 20px;
+
+}
+
+section h2{
+
+text-align:center;
+
+font-family:Cinzel;
+
+color:gold;
+
+margin-bottom:40px;
+
+font-size:30px;
+
+}
+
+/* CARD */
+
+.card-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid gold;
+
+border-radius:18px;
+
+padding:25px;
+
+transition:.4s;
+
+backdrop-filter:blur(10px);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px gold;
+
+}
+
+.card h3{
+
+color:gold;
+
+margin-bottom:15px;
+
+}
+
+.card a{
+
+display:inline-block;
+
+margin-top:15px;
+
+color:gold;
+
+text-decoration:none;
+
+}
+
+/* KNOWLEDGE */
+
+.knowledge-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:20px;
+
+}
+
+.knowledge-box{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid gold;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:20px;
+
+font-size:45px;
+
+transition:.4s;
+
+}
+
+.knowledge-box:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 20px #FFD700;
+
+}
+
+/* MEDIA */
+
+.media-buttons{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:15px;
+
+}
+
+.media-buttons a{
+
+padding:15px 30px;
+
+border:1px solid gold;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.3s;
+
+}
+
+.media-buttons a:hover{
+
+background:gold;
+
+color:black;
+
+}
 *{
 margin:0;
 padding:0;
@@ -273,6 +423,82 @@ transform:translateX(-100%);
 }
 
 /* HERO */
+  <!-- INFO TODAY -->
+
+<section class="info-today">
+
+<h2>INFO TODAY</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>Humanity</h3>
+<p>Latest humanitarian news and community activities.</p>
+<a href="#">Read More</a>
+</div>
+
+<div class="card">
+<h3>Business</h3>
+<p>Business promotion, entrepreneurship and digital economy.</p>
+<a href="#">Read More</a>
+</div>
+
+<div class="card">
+<h3>Technology</h3>
+<p>Artificial Intelligence, innovation and digital transformation.</p>
+<a href="#">Read More</a>
+</div>
+
+</div>
+
+</section>
+
+<!-- KNOWLEDGE BOARD -->
+
+<section class="knowledge">
+
+<h2>NANIS KNOWLEDGE BOARD</h2>
+
+<div class="knowledge-grid">
+
+<div class="knowledge-box">
+📘
+<h3>Education</h3>
+</div>
+
+<div class="knowledge-box">
+💹
+<h3>Economy</h3>
+</div>
+
+<div class="knowledge-box">
+🤖
+<h3>Technology</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- MEDIA CHANNEL -->
+
+<section class="media">
+
+<h2>MEDIA CHANNEL</h2>
+
+<div class="media-buttons">
+
+<a href="#">Facebook</a>
+
+<a href="#">TikTok Live</a>
+
+<a href="#">YouTube</a>
+
+<a href="#">Instagram</a>
+
+</div>
+
+</section>
 
 .hero{
 
@@ -291,7 +517,6 @@ padding:20px;
 }
 
 .hero h1{
-
 font-size:40px;
 
 font-family:Cinzel;

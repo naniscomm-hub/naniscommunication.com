@@ -10,6 +10,116 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+  .news-grid,
+.video-grid,
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.news-card,
+.video-card,
+.gallery-box{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid gold;
+
+border-radius:20px;
+
+padding:30px;
+
+text-align:center;
+
+transition:.4s;
+
+backdrop-filter:blur(10px);
+
+}
+
+.news-card:hover,
+.video-card:hover,
+.gallery-box:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 0 25px gold;
+
+}
+
+.news-card h3,
+.video-card h3{
+
+margin:15px 0;
+
+color:gold;
+
+}
+
+.news-card a{
+
+display:inline-block;
+
+margin-top:15px;
+
+color:gold;
+
+text-decoration:none;
+
+}
+
+.business{
+
+text-align:center;
+
+}
+
+.business p{
+
+max-width:700px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+line-height:1.8;
+
+}
+
+footer{
+
+padding:50px 20px;
+
+text-align:center;
+
+border-top:1px solid gold;
+
+background:#050505;
+
+}
+
+footer h3{
+
+font-family:Cinzel;
+
+color:gold;
+
+margin-bottom:10px;
+
+}
+
+footer p{
+
+color:#ccc;
+
+margin:6px 0;
+
+}
 section{
 
 padding:80px 20px;
@@ -481,7 +591,120 @@ transform:translateX(-100%);
 </section>
 
 <!-- MEDIA CHANNEL -->
+<!-- GLOBAL NEWS -->
 
+<section class="global-news">
+
+<h2>GLOBAL NEWS NETWORK</h2>
+
+<div class="news-grid">
+
+<div class="news-card">
+🌍
+<h3>Malaysia News</h3>
+<p>Live news updates from Malaysia.</p>
+<a href="#">View News</a>
+</div>
+
+<div class="news-card">
+🌎
+<h3>World News</h3>
+<p>International headlines and breaking stories.</p>
+<a href="#">View News</a>
+</div>
+
+<div class="news-card">
+🎬
+<h3>Entertainment</h3>
+<p>Movies, music, BTS and global entertainment.</p>
+<a href="#">View News</a>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VIDEO GALLERY -->
+
+<section class="video-gallery">
+
+<h2>VIDEO GALLERY</h2>
+
+<div class="video-grid">
+
+<div class="video-card">
+🎥
+<h3>Latest Media Video</h3>
+</div>
+
+<div class="video-card">
+📺
+<h3>Humanity Video</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ACTIVITY MEDIA JOURNEY -->
+
+<section class="gallery">
+
+<h2>ACTIVITY MEDIA JOURNEY</h2>
+
+<div class="gallery-grid">
+
+<div class="gallery-box">Photo 1</div>
+
+<div class="gallery-box">Photo 2</div>
+
+<div class="gallery-box">Photo 3</div>
+
+<div class="gallery-box">Photo 4</div>
+
+</div>
+
+</section>
+
+
+<!-- BUSINESS -->
+
+<section class="business">
+
+<h2>BUSINESS PROMOTION BOARD</h2>
+
+<p>
+
+Promote your products and services with Nanis Communication.
+
+</p>
+
+<a class="btn" href="#">Advertise Now</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>NANIS COMMUNICATION</h3>
+
+<p>
+
+Bridging Technology • Humanity • Business
+
+</p>
+
+<p>
+
+© 2026 All Rights Reserved
+
+</p>
+
+</footer>ò
 <section class="media">
 
 <h2>MEDIA CHANNEL</h2>
